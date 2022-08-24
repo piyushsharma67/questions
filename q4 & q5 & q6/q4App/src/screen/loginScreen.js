@@ -79,7 +79,7 @@ function LoginScreen(props){
 
   // Handle the verify phone button press
   async function verifyPhoneNumber(phoneNumber) {
-    const confirmation = await auth().verifyPhoneNumber(phoneNumber);
+    const confirmation = await auth().verifyPhoneNumber(states[keys.PHONE]);
     setConfirm(confirmation);
   }
 
